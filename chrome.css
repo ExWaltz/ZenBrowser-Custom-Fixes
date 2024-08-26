@@ -1,0 +1,23 @@
+@media (-moz-bool-pref: "zen.tabs.vertical") {
+  .tabbrowser-tab:is([multiselected="true"], [selected]) {
+    outline-style: double;
+    outline-width: thin;
+  }
+
+  .tabbrowser-tab {
+    margin-top: 1.5px !important;
+    margin-bottom: 0px !important;
+  }
+
+  /* Fixes webpage moving */
+  #navigator-toolbox:hover {
+    --zen-navigation-toolbar-min-width: 4.05rem !important;
+  }
+
+  /* Fixes Bookmarks clipping through the vertical tabs */
+  #PersonalToolbar {
+    border-radius: 0.75rem 0px;
+    margin-left: 4.05rem !important;
+  }
+}
+
